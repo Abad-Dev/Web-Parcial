@@ -7,12 +7,15 @@
     --color-secondary: #abb8c3;
     --color-tertiary: #777;
     --dark-grey: rgb(85, 85, 85);
+    --light-grey: rgb(119, 119, 119);
+    --lighter-grey: rgb(182, 182, 182);
+    --dark-primary: rgb(51, 72, 98);
 }
 
 *{
     font-family: 'Lato', sans-serif;
     margin: 0;
-    letter-spacing: .256px;
+    letter-spacing: 0.7px;
 }
 
 body{
@@ -55,9 +58,13 @@ img{
     flex-basis: 33.33%;
 }
 
+.col-3{
+    flex-basis: 25%;
+}
+
 .vertical-divider{
     border-left: 1px solid rgba(0,0,0,.1);
-    height: 80%;
+    min-height: 80%;
     width: 1px;
     min-height: 20px;
     margin: 0 7.5px;
@@ -89,7 +96,7 @@ img{
 .separator h3{
     color: var(--dark-grey);
     margin: 0 15px;
-    font-size: 20px;
+    font-size: 19px;
     text-transform: uppercase;
 }
 
@@ -184,7 +191,8 @@ img{
 #nav p:hover{
     color: #323232;
 }
-.img-container{
+
+#nav .img-container{
     display: flex;
     align-items: start;
     justify-content: start;
@@ -339,6 +347,10 @@ main .anormal{
 
 /* Desc Styles */
 
+#desc .short-separator{
+    margin-top: 10px;
+}
+
 #desc .col-4{
     width: 100%;
     height: 160px;
@@ -403,3 +415,286 @@ main .anormal{
 
 
 /* End Desc Styles */
+
+/* Flip Styles */
+
+.flip{
+    align-items: start;
+}
+
+
+.flip .col-3{
+    padding: 19.6px 9.8px;
+    cursor: pointer;
+}
+
+.flip small{
+    color: var(--light-grey);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 10.8px;
+}
+
+.flip p{
+    color: var(--dark-primary);
+    font-size: 14.4px;
+    letter-spacing: .256px;
+    margin: 2px 0;
+}
+
+.flip p:hover{
+    color: black;
+}
+
+.flip b{
+    font-weight: 700;
+    font-size: 14.4px;
+}
+
+.flip del{
+    color: var(--light-grey);
+}
+
+
+
+.flip-img-container{ /* Este código será reusado */
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.flip-bg-inner{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transition-duration: .6s;
+}
+
+.flip-img-container:hover .flip-bg-inner{
+    opacity: 0;
+}
+
+.flip-bg-inner-reverse{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.bot-box{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    opacity: 0.9;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 0;
+    font-weight: 700;
+    font-size: 13px;
+    top: 100%;
+    z-index: 3;
+    transition-duration: .3s;
+}
+
+.flip-img-container:hover .bot-box{
+    top: 89.2%;
+}
+
+
+#flip .col-3:nth-child(1) .flip-bg-inner{
+    background-image: url("images/flip11.jpeg");
+}
+
+#flip .col-3:nth-child(2) .flip-bg-inner{
+    background-image: url("images/flip21.jpeg");
+}
+
+#flip .col-3:nth-child(3) .flip-bg-inner{
+    background-image: url("images/flip31.jpeg");
+}
+
+#flip .col-3:nth-child(4) .flip-bg-inner{
+    background-image: url("images/flip41.jpeg");
+}
+
+
+
+#flip .col-3:nth-child(1) .flip-bg-inner-reverse{
+    background-image: url("images/flip12.jpeg");
+}
+
+#flip .col-3:nth-child(2) .flip-bg-inner-reverse{
+    background-image: url("images/flip22.jpeg");
+}
+
+#flip .col-3:nth-child(3) .flip-bg-inner-reverse{
+    background-image: url("images/flip32.jpeg");
+}
+
+#flip .col-3:nth-child(4) .flip-bg-inner-reverse{
+    background-image: url("images/flip42.jpeg");
+}
+
+/* End Flip Styles */
+
+/* Prod Styles */
+
+#prod .col-3:nth-child(1) .flip-bg-inner{
+    background-image: url("images/prod11.jpeg");
+}
+
+#prod .col-3:nth-child(2) .flip-bg-inner{
+    background-image: url("images/prod21.jpeg");
+}
+
+#prod .col-3:nth-child(3) .flip-bg-inner{
+    background-image: url("images/prod31.jpg");
+}
+
+#prod .col-3:nth-child(4) .flip-bg-inner{
+    background-image: url("images/prod41.jpeg");
+}
+
+
+
+#prod .col-3:nth-child(1) .flip-bg-inner-reverse{
+    background-image: url("images/prod12.jpeg");
+}
+
+#prod .col-3:nth-child(2) .flip-bg-inner-reverse{
+    background-image: url("images/prod22.jpeg");
+}
+
+#prod .col-3:nth-child(3) .flip-bg-inner-reverse{
+    background-image: url("images/prod32.jpg");
+}
+
+#prod .col-3:nth-child(4) .flip-bg-inner-reverse{
+    background-image: url("images/prod42.jpeg");
+}
+
+/* End Prod Styles */
+
+/* Categories Styles */
+
+#categories .col-3{
+    height: 296px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 9.8px 19.6px;
+    position: relative;
+}
+
+#categories .col-3:nth-child(1){
+    background-image: url("images/cat1.jpg");
+}
+
+#categories .col-3:nth-child(2){
+    background-image: url("images/cat2.jpeg");
+}
+
+#categories .col-3:nth-child(3){
+    background-image: url("images/cat3.jpg");
+}
+
+#categories .col-3:nth-child(4){
+    background-image: url("images/cat4.jpeg");
+}
+
+#categories .text-container{
+    background-color: hsla(0,0%,100%,.95);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 14.4px 0;
+    top: 65%;
+    transition-duration: .3s;
+}
+
+#categories .text-container p{
+    color: #555;
+    font-size: 14.4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-duration: .3s;
+}
+
+#categories .text-container small{
+    font-size: 10.2px;
+    color: var(--dark-primary);
+    text-transform: uppercase;
+    transition-duration: .3s;
+}
+
+#categories .col-3{
+    cursor: pointer;
+}
+
+#categories .col-3:hover .text-container{
+    background-color: var(--color-primary);
+}
+
+#categories .col-3:hover p, 
+#categories .col-3:hover small{
+    color: white;
+}
+
+/* End Categories Styles */
+
+/* Icon Styles */
+
+#icons{
+    margin: 40px 0;
+}
+
+
+#icons .col-4{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 30px;
+}
+
+#icons .col-4 *{
+    align-self: center;
+}
+
+#icons span{
+    border: 2px solid var(--lighter-grey);
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 30px;
+    color: var(--lighter-grey);
+    transition-duration: .2s;
+}
+
+#icons .col-4:hover span{
+    background-color: var(--lighter-grey);
+    color: white;
+}
+
+
+#icons h5{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--dark-grey);
+    margin: 8px 0;
+}
+
+#icons p{
+    text-align: center;
+    letter-spacing: .1px;
+    line-height: 25.6px;
+    color: var(--light-grey);
+}
+
+#icons .vertical-divider{
+    min-height: 220px;
+}
+
+/* End Icons Styles */
