@@ -90,7 +90,7 @@ body{
 /* Aside Styles */
 
 aside {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.8em;
 }
 
 aside .widget-title{
@@ -127,6 +127,7 @@ aside ul li{
 
     line-height: 1.2;
     color: var(--dark-primary);
+    cursor: pointer;
 }
 
 aside ul li:last-child{
@@ -193,4 +194,128 @@ aside .cat-container .cat h6{
     margin-left: 3px;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* End Aside Styles */
+
+/* Post Styles */
+
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post a, .post-footer a{
+    color: var(--color-primary);
+    letter-spacing: 0;
+}
+
+.post a:hover, .post-footer a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.post .category{
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1.05;
+    font-size: .68em;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+
+.post .title{
+    font-weight: 600;
+    font-size: 1.55em;
+    color: var(--dark-grey);
+}
+
+.post .small-divider{
+    margin: .8em 0 1em 0;
+    width: 100%;
+    max-width: 30px;
+    height: 3px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.post .date{
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+.post .img-container{
+    position: relative;
+}
+
+.post img{
+    margin: 1.5em 0;
+}
+
+.post .img-container .date{
+    position: absolute;
+    top: 5.5em;
+    left: -.5em;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    border: 2px solid;
+    padding-top: 3px;
+    margin-right: 15px;
+
+
+    min-width: 45px;
+    height: 45px;
+
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.post .img-container .date h6{
+    font-size: 16px;
+    line-height: .9;
+}
+
+.post .img-container .date small{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.post p{
+    line-height: 1.6;
+}
+
+.post button{
+    line-height: 2.19em;
+    padding: 0 1.1em;
+    margin: 1.5em 0 1em 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: 2px solid;
+    font-size: .75em;
+    font-weight: 700;
+
+    color: var(--color-primary);
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 0 0.8em 0;
+    font-size: .8em;
+
+    color: var(--light-grey);
+
+    margin-top: 1.5em;
+    margin-bottom: 30px;
+
+    border-top: 1px solid #ececec;
+    border-bottom: 2px solid #ececec;
 }
