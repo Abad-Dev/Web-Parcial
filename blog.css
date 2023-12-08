@@ -1,0 +1,155 @@
+body{
+    color: #777;
+}
+
+.black-in-hover:hover{
+    color: black;
+}
+
+
+/* Main Blog Styles */
+
+#main-blog{
+    background-image: url("images/blog-bg.jpeg");
+    background-size: cover;
+    background-position: 0 24%;
+
+    height: 400px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);;
+}
+
+#main-blog h1, h2{
+    letter-spacing: 3px;
+}
+
+#main-blog .container{
+    max-width: 1080px;
+    width: 100%;
+}
+
+#main-blog .container .text-container{
+    width: 60%;
+}
+
+#main-blog p{
+    font-size: 1.3em;
+    margin: .8em 0;
+    line-height: 1.6;
+}
+
+#main-blog .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+#main-blog .icons-container i{
+    margin: 0.5em 0;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid hsla(0,0%,100%,.5);
+}
+
+/* Content Container Styles */
+
+#content-blog{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#content-blog .row-large{
+    display: flex;
+    flex-grow: row wrap;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+#content-blog .large-9{ 
+    margin: 0;
+    flex-basis: 79%;
+    max-width: 79%;
+    padding: 0 30px 30px;
+}
+
+#content-blog .large-3{
+    border-left: 1px solid #ececec;
+    padding: 0 30px 30px;
+    flex-basis: 22%;
+    max-width: 22%;
+}
+
+/* Aside Styles */
+
+aside {
+    margin-bottom: 1.5em;
+}
+
+aside .widget-title{
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+aside .widget-divider{
+    margin: .9em 0 1em 0;
+    width: 100%;
+    max-width: 30px;
+    height: 3px;
+    background-color: rgba(0,0,0,.1);
+}
+
+aside .widget-text{
+    line-height: 1.6;
+}
+
+aside ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+aside ul li{
+    position: relative;
+    padding: 10px 0;
+
+    display: flex;
+
+    border-bottom: 1px solid #e7e7e7;
+
+    line-height: 1.2;
+    color: var(--dark-primary);
+}
+
+aside .date{
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    border: 2px solid;
+    padding: 1px;
+    margin-right: 15px;
+
+
+    min-width: 38px;
+    height: 38px;
+
+    box-sizing: border-box;
+}
+
+aside .date h6{
+    font-size: 16px;
+}
+
+aside .date small{
+    font-size: .7em;
+}

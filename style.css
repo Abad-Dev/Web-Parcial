@@ -20,6 +20,11 @@
     outline: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 p{
     letter-spacing: 0px;
 }
@@ -134,7 +139,9 @@ img{
     display: flex;
     align-items: center;
     color: #fffc;
-    margin: 0 .5px;
+    margin: 0 .08em;
+    margin-left: 0;
+    letter-spacing: .1px;
 
     cursor: pointer;
     transition-duration: .3s;
@@ -203,6 +210,7 @@ img{
     font-weight: 700;
     cursor: pointer;
     transition-duration: .3s;
+    letter-spacing: .4px;
     color: var(--color-tertiary);
 }
 
@@ -321,11 +329,10 @@ main h1, h2{
 
 main h1{
     font-size: 86px;
-    
 }
 
 main h2{
-    font-size: 53px;
+    font-size: 3.5em;
 }
 
 .buttons-container{

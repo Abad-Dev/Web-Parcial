@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Google Icons-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
     <script src="https://kit.fontawesome.com/82fa32f115.js" crossorigin="anonymous"></script>
     <!--Font Awesome-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -16,7 +17,6 @@
     <div id="header">
         <div class="container">
             <div class="row">
-
                 <p>
                     Add Anything Here Or Just Remove It....
                 </p>
@@ -77,13 +77,15 @@
         <div class="container">
             <div class="row">
                 <div class="img-container">
-                    <img src="images/logo.png" alt="">
+                    <a href="index.html" >
+                        <img src="images/logo.png" alt="">
+                    </a>
                 </div>
                 <div class="items-container row">
                     <p class="normal">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </p>
-                    <p style="color: #323232;">
+                    <p>
                         Demos
                         <span class="material-symbols-outlined" style="color: var(--color-tertiary);">
                             expand_more
@@ -107,10 +109,8 @@
                             expand_more
                         </span>
                     </p>
-                    <p>
-                        <a href="blog.html">
-                            Blog
-                        </a>
+                    <p style="color: #323232;">
+                        Blog
                     </p>
                     <p>
                         Elements
@@ -132,317 +132,103 @@
         </div>
     </nav><!--nav-->
 
-    <main class="container-fluid">
+    <main id="main-blog" class="container-fluid">
         <div class="overlay">
-            <p class="dancing">It has Finally started...</p>
-            <hr class="short-separator" style="margin-bottom: 8px;">
-            <h1>Huge Sale</h1>
-            <h2>Up to 70% OFF</h2>
-            <hr class="short-separator anormal">    
-            <div class="buttons-container row">
-                <button>Shop Men</button>
-                <button>Shop Women</button>
-                <button>Shop All</button>
-            </div>
-        </div>
-    </main><!--main-->
-
-
-    <div class="container-fluid" id="desc">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <a href="blog.html">
-                        <div class="bg-inner"></div>
-                        <div class="text-overlay">
-                            <h4>Our Blog</h4>
-                            <div class="short-separator"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <div class="bg-inner"></div>
-                    <div class="text-overlay">
-                        <h4>Join Our<br><strong style="font-size: 85%;">Competition</strong></h4>
-                        <div class="short-separator"></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="bg-inner"></div>
-                    <div class="text-overlay">
-                        <h4>About us</h4>
-                        <div class="short-separator"></div>
-                    </div>
-                </div>
-            </div><!--row-->
-        </div><!--container-->
-    </div><!--desc-->
-
-    <div class="container separator">
-        <hr>
-        <h3>Weekly Featured Products</h3>
-        <hr>
-    </div>
-
-    <div class="container-fluid" id="flip">
-        <div class="container">
-            <div class="row flip">
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Men</small>
-                    <p>Osaka Entry Tee Superdry 12</p>
-                    <b>$29,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Shoes</small>
-                    <p>All Star Canvas Hi Converse</p>
-                    <b>$29,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Sweaters</small>
-                    <p>Fluro Big Pullover Designers Remix</p>
-                    <b>$49,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Tops</small>
-                    <p>Varanise CN Tee Hilfiger Denim</p>
-                    <del>$19,00</del> <b>$15,00</b>
-                </div>
-            </div>
-        </div>
-    </div><!--flip-->
-
-    <div class="container separator" style="margin: 50px auto 20px auto;">
-        <hr>
-        <h3>Best Selling Products</h3>
-        <hr>
-    </div>
-
-    <div class="container-fluid" id="prod">
-        <div class="container">
-            <div class="row flip">
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Bags</small>
-                    <p>Daisy Bag Sonia by Sonia Rikel</p>
-                    <b>$2.999,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Swaters</small>
-                    <p>On1 Jersey UNIF</p>
-                    <b>$39,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Clothing</small>
-                    <p>Happy Ninja</p>
-                    <b>$18,00</b>
-                </div>
-                <div class="col-3">
-                    <div class="flip-img-container">
-                        <div class="flip-bg-inner"></div>
-                        <div class="flip-bg-inner-reverse"></div>
-                        <div class="bot-box">Quick view</div>
-                    </div>
-                    <small>Tops</small>
-                    <p>Beyond Top NLY Trend</p>
-                    <b>$9,90</b>
-                </div>
-            </div>
-        </div>
-    </div><!--prod-->
-
-    <div class="container separator" style="margin: 20px auto 40px auto;">
-        <hr>
-        <h3>Browse Our Categories</h3>
-        <hr>
-    </div>
-
-    <div class="container-fluid" id="categories">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="text-container">
-                        <p>Clothing</p>
-                        <small>12 Products</small>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="text-container">
-                        <p>Women</p>
-                        <small>18 Products</small>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="text-container">
-                        <p>Booking</p>
-                        <small>6 Products</small>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="text-container">
-                        <p>Men</p>
-                        <small>9 Products</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--categories-->
-
-    <div class="container-fluid" id="icons">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'wght' 700;">
-                        done
-                    </span>
-                    <h5>FREE SHIPPING ON ALL ORDRES</h5>
+            <div class="container">
+                <div class="text-container">
+                    <h2>Our Blog</h2>
                     <p>
-                        Get Free Shipping on all orders over $75 and free returns to our UK returns centre! Items are dispatched from the US and will arrive in 5-8 days.
+                        Change This header to anything by using the UX Builder. You can also remove it. It's only visible on the blog homepage.
                     </p>
-                </div>
-                <div class="vertical-divider"></div>
-                <div class="col-4">
-                    
-                    <span class="material-symbols-outlined">
-                        favorite
-                    </span>
-                    <h5>AMAZING CUSTOMER SERVICE</h5>
-                    <p>
-                        Get Free Shipping on all orders over $75 and free returns to our UK returns centre! Items are dispatched from the US and will arrive in 5-8 days.
-                    </p>
-                </div>
-                <div class="vertical-divider"></div>
-                <div class="col-4">
-                    
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <h5>
-                        NO CUSTOMS OR DUTY FEES!
-                    </h5>
-                    <p>
-                        We pay these fees so you don't have to! The total billed at checkout is the final amount you pay, inclusive of VAT, with no additional charges at the time of delivery!
-                    </p>
+                    <div class="icons-container">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-tumblr"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div><!--icons-->
+    </main>
 
-    <div class="container-fluid" id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="stars-container">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">
-                        star
-                    </span>
-                </div>
-                <p class="text-container">
-                    PBR kogi VHS commodo, single-origin coffee selvage kale chips. Fugiat try-hard ad aesthetic, tofu master cleanse typewriter tote bag accusamus sustainable ennui hella small batch cliche.
-                </p>
-                <p class="testimonial-name">
-                    <b>Lucy Anderson</b> / Facebook
-                </p>
+    <div id="content-blog">
+        <div class="row-large">
+            <div class="large-9"></div>
+            <div class="large-3">
+                <aside>
+                    <span class="widget-title">About</span>
+                    <div class="widget-divider"></div>
+                    <p class="widget-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                    </p>
+                </aside>
+
+                <aside>
+                    <span class="widget-title">Latest Posts</span>
+                    <div class="widget-divider"></div>
+                    <ul>
+                        <li>
+                            <span class="date">
+                                <h6>19</h6>
+                                <small>Nov</small>
+                            </span>
+                            <p class="black-in-hover">
+                                Welcome to Flatsome
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">
+                                <h6>13</h6>
+                                <small>Oct</small>
+                            </span>
+                            <p class="black-in-hover">
+                                Just Another Post With a Gallery
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">
+                                <h6>13</h6>
+                                <small>Oct</small>
+                            </span>
+                            <p class="black-in-hover">
+                                A Simple Blog Post
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">
+                                <h6>01</h6>
+                                <small>Jan</small>
+                            </span>
+                            <p class="black-in-hover">
+                                A Video Blog Post
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">
+                                <h6>03</h6>
+                                <small>Dec</small>
+                            </span>
+                            <p class="black-in-hover">
+                                Just a cool blog post with Images
+                            </p>
+                        </li>
+                    </ul>
+                </aside>
+
+                <aside>
+                    <span class="widget-title">Recent Comments</span>
+                    <div class="widget-divider"></div>
+                </aside>
+
+                <aside>
+                    <span class="widget-title">Tag Cloud</span>
+                    <div class="widget-divider"></div>
+                </aside>
             </div>
         </div>
-    </div><!--testimonial-->
-
-    <div class="container separator" style="margin: 35px auto 40px auto;">
-        <hr>
-        <h3>Latest News</h3>
-        <hr>
     </div>
-
-    <div class="container-fluid" id="news">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/news1.jpg" alt="">
-                    <h5>Welcome to Flatsome</h5>
-                    <div class="short-separator"></div>
-                    <p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging! [...]</p>
-                    <span class="date">
-                        <h6>19</h6>
-                        <small>Nov</small>
-                    </span>
-                </div>
-                <div class="col-3">
-                    <img src="images/news2.jpg" alt="">
-                    <h5>Just another post with A Gallery</h5>
-                    <div class="short-separator"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed vulputate massa. Fusce ante magna, [...]</p>
-                    <span class="date">
-                        <h6>13</h6>
-                        <small>Oct</small>
-                    </span>
-                </div>
-                <div class="col-3">
-                    <img src="images/news3.jpg" alt="">
-                    <h5>A Simple Blog Post</h5>
-                    <div class="short-separator"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut [...]</p>
-                    <span class="date">
-                        <h6>13</h6>
-                        <small>Oct</small>
-                    </span>
-                </div>
-                <div class="col-3">
-                    <img src="images/news4.jpg" alt="">
-                    <h5>A Video Blog Post</h5>
-                    <div class="short-separator"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed vulputate massa. Fusce ante magna, [...]</p>
-                    <span class="date">
-                        <h6>01</h6>
-                        <small>Jan</small>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div><!--news-->
 
     <hr style="border: 1px solid #ebebeb; margin: 50px 15px 30px;">
 
