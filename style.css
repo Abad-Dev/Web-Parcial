@@ -850,6 +850,11 @@ del{
 
 #min .col-3{
     padding: 10px;
+    margin-bottom: 1.5em;
+}
+
+#min .col-3 .item:last-child{
+    border-bottom: none;
 }
 
 #min .header{
@@ -892,6 +897,10 @@ del{
 
 #min .item del{
     font-weight: 400 !important;
+}
+
+#min .item b{
+    color: black;
 }
 
 /* End Min Styles */
@@ -990,6 +999,10 @@ footer .date-container .date{
     margin-right: 15px;
 }
 
+footer .date-container:last-child{
+    border-bottom: none;
+}
+
 footer .date *{
     line-height: 11px;
 }
@@ -1002,27 +1015,35 @@ footer .date h6{
     font-size: 14.4px;
 }
 
-
-footer .bag-container{
+.badge-container{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    color: rgb(216, 216, 216);
 }
 
-footer .bag{
+
+footer .badge-container{
+    margin-bottom: 3em;
+}
+
+.badge{
     display: inline-block;
-    border: 1px solid rgb(241, 241, 241);
+    border: 1px solid;
     border-radius: 3px;
     padding: 0px 5px;
-    margin: 0 3px 5px 0;
-    font-size: 12.8px;
+    margin: 0 5.5px 6px 0;
+    font-size: .8em;
     cursor: pointer;
-    color: rgb(241, 241, 241);
     font-weight: 400;
+    letter-spacing: -.015em;
+    line-height: 24px;
 }
 
-footer .bag:hover{
+.badge:hover{
     border-color: rgb(22, 22, 22);
     background-color: rgb(22, 22, 22);
+    color: white;
 }
 
 footer input{

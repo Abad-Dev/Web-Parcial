@@ -52,9 +52,10 @@ body{
     margin: 0.5em 0;
     padding: 5px;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 2px solid hsla(0,0%,100%,.5);
+    text-shadow: none;
 }
 
 /* Content Container Styles */
@@ -74,8 +75,8 @@ body{
 
 #content-blog .large-9{ 
     margin: 0;
-    flex-basis: 79%;
-    max-width: 79%;
+    flex-basis: 78%;
+    max-width: 78%;
     padding: 0 30px 30px;
 }
 
@@ -100,7 +101,7 @@ aside .widget-title{
 }
 
 aside .widget-divider{
-    margin: .9em 0 1em 0;
+    margin: .8em 0 1em 0;
     width: 100%;
     max-width: 30px;
     height: 3px;
@@ -128,28 +129,68 @@ aside ul li{
     color: var(--dark-primary);
 }
 
+aside ul li:last-child{
+    border-bottom: none;
+}
+
 aside .date{
     color: var(--color-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     
     border: 2px solid;
-    padding: 1px;
+    padding-top: 1px;
     margin-right: 15px;
 
 
-    min-width: 38px;
-    height: 38px;
+    min-width: 37px;
+    height: 37px;
 
     box-sizing: border-box;
 }
 
 aside .date h6{
     font-size: 16px;
+    line-height: .9;
 }
 
 aside .date small{
-    font-size: .7em;
+    font-size: .67em;
+    font-weight: 600;
+}
+
+aside .badge-container{
+    color: #5b5f79;
+}
+
+aside .cat-container .cat{
+    display: flex;
+    align-items: center;
+
+    font-size: 16px !important;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+aside .cat-container .cat:last-child{
+    border-bottom: none;
+}
+
+aside .cat-container .cat p{
+    line-height: 1.6;
+    padding: 6px 0;
+    color: var(--dark-primary);
+}
+
+aside .cat-container .cat p:hover{
+    cursor: pointer;
+    color: black;
+}
+
+aside .cat-container .cat h6{
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: 400;
 }
