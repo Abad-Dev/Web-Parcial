@@ -20,6 +20,10 @@
     outline: none;
 }
 
+body{
+    position: relative;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -1124,3 +1128,67 @@ footer #second-row p{
 }
 
 /* End Footer Styles */
+
+/* Float Buttons Styles */
+
+.float-buttons{
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 45%;
+    right: 5px;
+    width: 70px;
+    z-index: 25;
+}
+
+.float-buttons div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .3s;
+}
+
+.float-buttons div:hover{
+    background-color: #00699B;
+    cursor: pointer;
+}
+
+.float-buttons .button1{
+    font-size: 10.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.float-buttons .button1 img{
+    height: 32px;
+    width: 32px;
+    margin-bottom: 3px;
+}
+
+.float-buttons .button2 h6{
+    font-size: 22px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+
+    position: relative;
+}
+
+.float-buttons .button2 small{
+    font-size: 15px;
+    top: 4px;
+    left: -10px;
+    position: absolute;
+}
+
+
+.float-buttons .button2 p{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
