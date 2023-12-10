@@ -11,6 +11,8 @@
     --lighter-grey: rgb(182, 182, 182);
     --dark-primary: rgb(51, 72, 98);
     --color-footer: #f1f1f1;
+
+    scroll-behavior:smooth
 }
 
 *{
@@ -1191,4 +1193,36 @@ footer #second-row p{
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+/* End Float Buttons Styles */
+
+/* Up button Styles */
+
+.up{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 22px;
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 50%;
+
+    color: var(--light-grey);
+}
+
+.up:hover i{
+    transition-duration: .4s;
+    color: white;
+}
+
+.up:hover{
+    
+    cursor: pointer;
+    
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
 }
