@@ -1,3 +1,3 @@
 # Web-Parcial
 
-### https://sedrondev.github.io/Web-Parcial
+### https://abad-dev.github.io/Web-Parcial/
